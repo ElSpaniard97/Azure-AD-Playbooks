@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Common helper for Microsoft Graph scripts (works on Windows & Linux).
+  Common helper for Microsoft Graph scripts (Windows + Linux).
 
 .DESCRIPTION
   - Checks that Microsoft.Graph module is installed
@@ -14,7 +14,10 @@ param(
         "Group.ReadWrite.All",
         "Directory.ReadWrite.All",
         "RoleManagement.ReadWrite.Directory",
-        "AuditLog.Read.All"
+        "Policy.ReadWrite.ConditionalAccess",
+        "IdentityRiskyUser.ReadWrite.All",
+        "AuditLog.Read.All",
+        "Application.ReadWrite.All"
     )
 )
 
